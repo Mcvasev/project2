@@ -1,20 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 .container {
-position: absolute;
-width: 336px;
-height: 236px;
-left: 408px;
-top: 232px;
-border: 1px solid #C4C4C4;
-box-sizing: border-box;
-border-radius: 10px;
+    /* position: absolute; */
+    display: block;
+    flex-direction: column;
+    width: 336px;
+    height: 236px;
+    left: 408px;
+    top: 232px;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 10px;
+
 }
 
 .yellow {
-    position: absolute;
-    width: 336px;
-    height: 28px;
+    /* position: relative; */
+    width: 334px;
+    height: 36px;
     left: 408px;
     top: 232px;
-    
     background: #FFDC40;
+    margin: 0 0 0 0;
+    display: block;
+    border-radius: 10px 10px 0 0;
+}
+
+h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.underYellow {
+    display:flex;    
+    flex-direction: column;
+}
+
+.sort {
+    justify-content: flex-end;
+
+}
+.afterList{
+    display: flex;    
+    flex-direction: column;
+}
+.name {
+width: 286px;
+height: 40px;
+border: 1px solid #C4C4C4;
+box-sizing: border-box;
+border-radius: 10px;
+padding: auto;
 }
