@@ -5,7 +5,7 @@
     display: block;
     flex-direction: column;
     width: 336px;
-    height: 236px;
+    /* height: 236px; */
     left: 408px;
     top: 232px;
     border: 1px solid #C4C4C4;
@@ -44,17 +44,8 @@ h1 {
     flex-direction: column;
 }
 
-.name {
-    margin-bottom: 15px;
 
-}
-.delete {
-    background: url(pic/circleDel.svg);
-    width: 20px;
-    height: 20px;
-}
-
-.Group74 {
+.grayB {
     /* display: none; */
     width: 25px;
     height: 15px;
@@ -64,7 +55,38 @@ h1 {
     margin: 0 40px 9px 0;
 }
 
-.knopka {
+.grayB:hover {
+    /* display: none; */
+    width: 25px;
+    height: 15px;
+    background: url(pic/BlackGroup.svg);
+    border: none;
+    align-self: flex-end;
+    margin: 0 40px 9px 0;
+}
+
+.grayBsort:hover {
+    /* display: none; */
+    width: 25px;
+    height: 15px;
+    background: url(pic/BlackGroupUP.svg);
+    border: none;
+    align-self: flex-end;
+    margin: 0 40px 9px 0;
+}
+
+.grayBsort {
+    /* display: none; */
+    width: 25px;
+    height: 15px;
+    background: url(pic/GroupUpGray.svg);
+    border: none;
+    align-self: flex-end;
+    margin: 0 40px 9px 0;
+}
+
+
+.knopkaAdd {
     width: 150px;
     height: 42px;
     background-color: #833AE0;
@@ -95,16 +117,54 @@ h1 {
     
 }
 
-.afterList{
+.afterList {
     display: flex;    
     flex-direction: column;
     /* align-items: flex-end; */
 }
-.name {
-width: 286px;
-height: 40px;
-border: 1px solid #C4C4C4;
-box-sizing: border-box;
-border-radius: 10px;
-margin: 0 0 5px 20px;
+
+.do {
+    width: 286px;
+    height: 40px;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 0 0 5px 0;
+}
+.do {
+    margin-bottom: 15px;
+
+}
+.buttonDelete {
+    border-radius: 50%;
+    border: 1px solid #C4C4C4;
+    background-color: white;
+    color: #C4C4C4;
+    font-size: 16px;
+    width: 23px;
+    height: 23px;
+    margin: 10px 0 0 -40px;
+    outline: none;
+    align-items: center;
+}
+.buttonDelete:hover {
+    border-radius: 50%;
+    border: 1px solid #C4C4C4;
+    background-color:#9953F1;
+    color: white;
+    font-size: 16px;
+    width: 23px;
+    height: 23px;
+    margin: 10px 0 0 -40px;
+    outline: none;
+}
+
+ul.menu {
+    /* box-sizing: border-box; */
+    padding: 0 0 0 20px;
+    display: flex;
+}
+
+li {
+    list-style-type: none;
 }
