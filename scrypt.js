@@ -3,14 +3,13 @@ let doArea = document.querySelector('.doArea');
 
 add.addEventListener('click', () => {
     let newDo = document.createElement('li');
-    newDo.innerHTML = `<li class="table"><input class="doArea" type="text"><button type="button" class="buttonDelete">x</button>`;
+    newDo.innerHTML = `<input class="doArea" type="text">\n<button type="button" class="buttonDelete">x</button>`;
     document.querySelector('.menu').append(newDo);
     delElementsDoList();
 });
 
 function delElementsDoList() {
     let buttonDel = document.querySelectorAll('.buttonDelete');
-    console.log(buttonDel);
     buttonDel.forEach((el) => {
         el.addEventListener('click', (event) => {
             event.target.parentElement.remove();
@@ -28,7 +27,6 @@ buttonSort.addEventListener('click', (event) => {
     if(flag === true){
         let doArray = document.querySelectorAll('.doArea');
         arr = Array.from(doArray);
-        console.log(arr);
         arr.sort((a,b) => {
             if (a.value > b.value) {
                 return 1;
